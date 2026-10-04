@@ -98,3 +98,11 @@ git push -u origin tweak/colors-pass
 - Keep canonical term as `PayTooPlay` for now.
 - Keep `index.html` as the narrative page and `builder.html` separate.
 - Prefer small commits so you can easily roll back.
+
+## Private docs policy (share on request)
+
+- Word docs (`.docx`) are kept private by default and are ignored by git.
+- Public pages should not link directly to private docs hosted in this repo.
+- Use "Guide available on request" on public pages.
+- When you want to share a guide, create a temporary/private share link from your storage provider (OneDrive, etc.) and send it directly.
+- Keep private source docs locally in this folder, but out of the public site.
