@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earth3 Â· Why Be an Xbot? Â· Promo Draft</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero" id="hud-hero">
+      <h1>Why be an Xbot?</h1>
+      <p>Because identity, capability, and rights become programmable assets.</p>
+      <p id="promo-line">Why be an Xbot? Pick a path, mint a capability, prove value.</p>
+    </section>
+
+    <section class="row">
+      <article class="card" style="grid-column: 1 / -1;">
+        <h2 class="title">Fast Prompt (Agent-First)</h2>
+        <p class="small" style="margin-bottom:0.65rem;">
+          Start simple. Pick a quick template, describe intent, then apply to draft. Dive into advanced only when needed.
+        </p>
+
+        <div class="fields">
+          <div class="field" style="grid-column: 1 / -1;">
+            <label for="fast-prompt-input">Prompt</label>
+            <textarea id="fast-prompt-input" placeholder="e.g. Mint J Doe screenshot from X location for Open Public Use, activate now on OneDrive Broadcast Layer."></textarea>
+          </div>
+        </div>
+
+        <div id="fast-template-list" class="template-chips"></div>
+
+        <div class="actions">
+          <button class="btn btn-primary" id="fast-apply-btn">Apply Fast Prompt to Draft</button>
+          <button class="btn btn-secondary" id="fast-open-advanced-btn">Open Advanced Controls</button>
+          <button class="btn btn-secondary" id="fast-sweep-btn">Run Scenario Sweep</button>
+        </div>
+
+        <pre id="fast-sweep-output" class="sweep-output">Sweep idle. Click "Run Scenario Sweep" to validate templates.</pre>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="card" style="grid-column: 1 / -1;">
+        <h2 class="title" id="marketing-assistant">Why Be an Xbot Â· Marketing Assistant</h2>
+        <p class="small">Auto-generates promo language from current mint + HUD trigger.</p>
+        <div class="fields" style="margin-top:0.55rem;">
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>Buzz Words</label>
+            <div id="promo-buzzwords" class="template-badge-row"></div>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>15-Second Pitch</label>
+            <p id="promo-pitch-15" class="small"></p>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>30-Second Pitch</label>
+            <p id="promo-pitch-30" class="small"></p>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>Feature Talking Points</label>
+            <div id="promo-features" class="log"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="row" id="promo-link-map">
+      <article class="card" style="grid-column: 1 / -1;">
+        <h2 class="title">Promo Hyperlink Map</h2>
+        <p class="small">Jump by topic for deck building, script writing, and sponsor walkthroughs.</p>
+        <div class="quick-links">
+          <a href="#pitch-15">15s Pitch</a>
+          <a href="#pitch-30">30s Pitch</a>
+          <a href="#token-stack">Token Stack</a>
+          <a href="#hud-opportunities">HUD Opportunities</a>
+          <a href="#ops-architecture">Engine Room Terms</a>
+          <a href="#proof-privacy">Privacy + Proof</a>
+        </div>
+
+        <div class="glossary-grid">
+          <div class="glossary-card" id="pitch-15">
+            <h3>15s Pitch Core</h3>
+            <p>PayTooPlay + moMintNTime + PlayerPower + TimeChain + player choice over privacy/permission.</p>
+          </div>
+          <div class="glossary-card" id="pitch-30">
+            <h3>30s Pitch Core</h3>
+            <p>Smart contracts convert ideas, actions, and events into reusable rights-aware assets.</p>
+          </div>
+          <div class="glossary-card" id="token-stack">
+            <h3>Token Stack</h3>
+            <p><strong>aDaB</strong>: Earth3 Cardano token narrative (50% ADA / 50% BTC).<br/><strong>CowsCome4Dayz</strong>: DeFi layer for player tokens + BTC + ADA + NIGHT + USDCx.<br/><strong>GXYZ (Jix-Zee)</strong>: daily-generated energy token powering action-to-reward loops.</p>
+          </div>
+          <div class="glossary-card" id="hud-opportunities">
+            <h3>HUD Opportunity Triggers</h3>
+            <p>Jix-eee Green + Cardano Blue for monetizable pathways, Sunrise for PlayerPower, Midnight Violet + White for privacy-proof routes.</p>
+          </div>
+          <div class="glossary-card" id="ops-architecture">
+            <h3>Architecture Terms</h3>
+            <p>Smart-contract remix ledger + TCID flow, meshX, HeliXbox, GateTrain, Magnus, TPU Forge, CPX, Broadcast, Companion UI.</p>
+          </div>
+          <div class="glossary-card" id="proof-privacy">
+            <h3>Proof + Privacy</h3>
+            <p>Use privacy/permission toggles with ZK-aware verification paths for trust without oversharing.</p>
+          </div>
+          <div class="glossary-card" id="remix-royalty-story">
+            <h3>Remix + Royalty Story</h3>
+            <p>Each mint is a Lego block with smart-contract rules. If an artist track is remixed into a Microsoft game and Player Doe sells the new version, payouts route instantly to both artist and platform participants under clear terms.</p>
+          </div>
+        </div>
+
+        <div class="doc-links small">
+          <a href="../earth3-node/Repo/Why%20Be%20An%20Xbot%20-%20aDaB%20Value%20Pr.pdf" target="_blank" rel="noopener">Open: Why Be An Xbot (aDaB) PDF</a>
+          <a href="../earth3-node/Repo/Earth%C2%B3%20Mint%20Template%20Catalog%20v1.0.pdf" target="_blank" rel="noopener">Open: Mint Template Catalog v1.0 PDF</a>
+          <a href="../earth3-node/Repo/Earth3%20Node%20%E2%80%94%20Technical%20Specification%20v0.2.pdf" target="_blank" rel="noopener">Open: Earth3 Node Technical Spec PDF</a>
+        </div>
+      </article>
+    </section>
+    <section class="row">
+      <article class="card">
+        <h2 class="title">0) Guided Templates</h2>
+        <div class="fields" style="margin-bottom: 0.75rem;">
+          <div class="field">
+            <label for="concept-filter-select">Concept Filter</label>
+            <select id="concept-filter-select"></select>
+          </div>
+          <div class="field">
+            <label for="template-select">Quick Template</label>
+            <select id="template-select"></select>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label>Template Concept Badges</label>
+            <div id="template-concept-badges" class="template-badge-row"></div>
+          </div>
+          <div class="field" style="display:flex; align-items:end;">
+            <button class="btn btn-secondary" id="apply-template-btn" style="width:100%;">Apply Quick Template</button>
+          </div>
+          <div class="field">
+            <label for="template-name-input">Save Template As</label>
+            <input id="template-name-input" placeholder="e.g. J Doe Public Screenshot" />
+          </div>
+          <div class="field" style="display:flex; align-items:end;">
+            <button class="btn btn-primary" id="save-template-btn" style="width:100%;">Save as Template</button>
+          </div>
+          <div class="field" style="display:flex; align-items:end;">
+            <button class="btn btn-danger" id="delete-template-btn" style="width:100%;">Delete Template</button>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label style="display:flex; align-items:center; gap:0.45rem; margin-top:0.1rem; text-transform:none; letter-spacing:0;">
+              <input type="checkbox" id="skip-delete-confirm-session" />
+              <span>Donâ€™t ask again this session</span>
+            </label>
+          </div>
+        </div>
+
+        <h2 class="title">0.5) Catalog Template (v1.0)</h2>
+        <div class="fields" style="margin-bottom: 0.75rem;">
+          <div class="field">
+            <label for="mint-pillar-filter">Pillar Filter</label>
+            <select id="mint-pillar-filter"></select>
+          </div>
+          <div class="field">
+            <label for="mint-type-select">Catalog Mint Type</label>
+            <select id="mint-type-select"></select>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <button class="btn btn-secondary" id="apply-catalog-template-btn" style="width:100%;">Apply Catalog Mint Type Defaults</button>
+          </div>
+        </div>
+
+        <p class="small" id="mint-template-hint">Catalog hint appears here after selection.</p>
+
+        <h2 class="title">1) Pick a Persona Path</h2>
+        <div class="personas">
+          <button class="persona-btn active" data-persona="creator">Creator</button>
+          <button class="persona-btn" data-persona="operator">Operator</button>
+          <button class="persona-btn" data-persona="org">Organization</button>
+          <button class="persona-btn" data-persona="agent">Agent</button>
+        </div>
+        <p class="kicker" id="persona-kicker"></p>
+      </article>
+
+      <article class="card">
+        <h2 class="title">2) Rights Signal (derived from WHY)</h2>
+        <div class="badges">
+          <span class="badge" id="right-use">Use</span>
+          <span class="badge" id="right-remix">Remix</span>
+          <span class="badge" id="right-revenue">Revenue</span>
+          <span class="badge" id="right-governance">Governance</span>
+        </div>
+        <p class="small">Use this as the visual bridge from pitch language to enforceable contract semantics.</p>
+      </article>
+    </section>
+
+    <section id="advanced-builder" class="row">
+      <article class="card">
+        <h2 class="title">3) Build Who/What/When/Where/Why Test Mint</h2>
+        <div class="fields">
+          <div class="field">
+            <label for="who-name">WHO Â· Display Name</label>
+            <input id="who-name" value="Epoch Fox" />
+          </div>
+          <div class="field">
+            <label for="who-did">WHO Â· DID</label>
+            <input id="who-did" value="did:e3:fox:pilot-001" />
+          </div>
+          <div class="field">
+            <label for="who-role">WHO Â· Role</label>
+            <input id="who-role" value="creator" />
+          </div>
+          <div class="field">
+            <label for="what-type">WHAT Â· Asset Type</label>
+            <input id="what-type" value="media-loop" />
+          </div>
+          <div class="field">
+            <label for="what-description">WHAT Â· Description</label>
+            <input id="what-description" value="proof-of-concept mint" />
+          </div>
+          <div class="field">
+            <label for="what-source">WHAT Â· Source Path</label>
+            <input id="what-source" value="browse-button-selected-path" />
+          </div>
+          <div class="field">
+            <label for="mint-epoch-select">WHEN Â· Epoch</label>
+            <select id="mint-epoch-select"></select>
+          </div>
+          <div class="field">
+            <label for="when-activation">WHEN Â· Activation Window</label>
+            <input id="when-activation" value="2026-10-15/2026-12-31" />
+          </div>
+          <div class="field">
+            <label for="where-surface">WHERE Â· Surface</label>
+            <select id="where-surface">
+              <option value="helixbox-edge">helixbox-edge</option>
+              <option value="meshx-discovery">meshx-discovery</option>
+              <option value="rights-graph">rights-graph</option>
+              <option value="sim-runtime">sim-runtime</option>
+              <option value="OneDrive Broadcast Layer">OneDrive Broadcast Layer</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mint-storage-select">WHERE Â· Storage Type</label>
+            <select id="mint-storage-select"></select>
+          </div>
+          <div class="field">
+            <label for="mint-rarity-select">Contract Â· Rarity</label>
+            <select id="mint-rarity-select"></select>
+          </div>
+          <div class="field">
+            <label for="mint-chain-select">Contract Â· Chain</label>
+            <select id="mint-chain-select"></select>
+          </div>
+          <div class="field">
+            <label for="mint-deriv-select">Contract Â· Derivative Rights</label>
+            <select id="mint-deriv-select"></select>
+          </div>
+          <div class="field">
+            <label for="mint-id-format">Contract Â· Mint ID Format</label>
+            <input id="mint-id-format" value="E3-WAT-XXX-{NODE}-{SEQ}" />
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label for="why-value">WHY Â· Value Proposition</label>
+            <textarea id="why-value">publish, prove origin, earn remix revenue</textarea>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" id="build-btn">Build Draft Payload</button>
+          <button class="btn btn-secondary" id="mint-btn">Simulate Test Mint</button>
+          <button class="btn btn-danger" id="reset-btn">Reset Draft</button>
+        </div>
+      </article>
+
+      <article class="card stack">
+        <div>
+          <h2 class="title">HUD-WoW Signal</h2>
+          <div id="mint-status-strip" class="status-strip">
+            <span id="status-draft" class="status-pill is-active" title="Draft payload stage">
+              <span class="status-icon">ðŸ§©</span>
+              <span class="status-text">Draft</span>
+            </span>
+            <span id="status-simulated" class="status-pill" title="Simulated mint stage">
+              <span class="status-icon">ðŸ§ª</span>
+              <span class="status-text">Simulated</span>
+            </span>
+            <span id="status-verified" class="status-pill" title="Verified stage">
+              <span class="status-icon">âœ…</span>
+              <span class="status-text">Verified</span>
+            </span>
+          </div>
+          <div class="color-bible" id="color-bible">
+            <span class="color-token token-privacy"><span class="dot"></span>Privacy Â· Midnight Violet</span>
+            <span class="color-token token-cardano"><span class="dot"></span>Cardano Rules Â· Blue</span>
+            <span class="color-token token-logic"><span class="dot"></span>Smart Contract Â· Grey Matter</span>
+            <span class="color-token token-gxyz"><span class="dot"></span>GXYZ Â· Bleed Lime Green</span>
+            <span class="color-token token-timechain"><span class="dot"></span>TimeChain Â· Black</span>
+            <span class="color-token token-helix"><span class="dot"></span>Helixbox/meshX/ZK Â· White</span>
+            <span class="color-token token-playerpower"><span class="dot"></span>PlayerPower/BTC Â· Sunrise</span>
+          </div>
+          <p id="hud-trigger-text" class="small" style="margin-top:0.55rem;">HUD Trigger: Neutral (no opportunity signal yet).</p>
+          <details class="hud-debug" id="hud-debug-panel">
+            <summary>HUD Trigger Debug</summary>
+            <div class="hud-debug-actions">
+              <button id="copy-hud-debug-btn" class="btn btn-secondary" type="button">Copy Debug JSON</button>
+            </div>
+            <pre id="hud-debug-output" class="hud-debug-output">{ "status": "waiting-for-evaluation" }</pre>
+          </details>
+        </div>
+        <div>
+          <h2 class="title">4) Payload JSON</h2>
+          <pre id="payload-out">{}</pre>
+        </div>
+        <div>
+          <h2 class="title">5) Simulated Mint Receipt</h2>
+          <pre id="receipt-out">{
+  "status": "waiting-for-test-mint"
+}</pre>
+        </div>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="card">
+        <h2 class="title">6) Mint Log (for promo screenshots)</h2>
+        <div id="mint-log" class="log"></div>
+      </article>
+
+      <article class="card">
+        <h2 class="title">7) Next Contract Integration</h2>
+        <p class="small">- Replace simulated mint with <code>POST /api/nft/mint</code></p>
+        <p class="small">- Verify entitlement with <code>GET /api/assets/verify</code></p>
+        <p class="small">- Record engagement trail with <code>POST /api/telemetry</code></p>
+        <p class="small">- Add real proof mode when EC-Schnorr endpoint is exposed</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="catalog-data.js"></script>
+  <script src="sample-scenarios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
