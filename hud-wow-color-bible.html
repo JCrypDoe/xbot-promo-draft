@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUD-WoW Color Bible · Earth3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="color-bible.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:var(--e3-page);color:var(--e3-ghost-text);font:400 16px/1.6 Inter,system-ui,sans-serif;position:relative}
+body::before{content:"HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   HUD-WoW   ";position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;white-space:normal;word-break:break-all;
+font:700 2.2rem/2.6 "Space Mono",monospace;color:#000;opacity:var(--e3-void-watermark-opacity);letter-spacing:.2em}
+main{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 1.2rem 4rem}
+h1,h2,h3,.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.15em}
+h1{color:var(--e3-why);font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:.4rem 0 .8rem}
+h2{color:var(--e3-who);font-size:1.5rem;margin:2.6rem 0 .8rem;font-weight:400}
+h3{font-size:.95rem;margin:.5rem 0 .2rem;color:#fff}
+a{color:var(--e3-ghost-text)}
+.back{font:700 .75rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.lead{max-width:62ch}
+.rule{border:1px solid var(--e3-line);border-left:4px solid var(--e3-why);background:var(--e3-card);padding:.8rem 1rem;margin:1rem 0;max-width:70ch}
+.rule b{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.9rem}
+.gl{background:var(--e3-card);border:1px solid var(--e3-line);padding:.9rem;transition:box-shadow .2s,border-color .2s}
+.gl:hover,.gl:focus-within{border-color:var(--f);box-shadow:0 0 14px var(--f)}
+.gl[id="f-void"]:hover{box-shadow:none;border-color:var(--e3-line)}
+.gl p{margin:.25rem 0;font-size:.9rem}.gl .meta{font:400 .72rem "Space Mono",monospace;color:#B0B0B0}.gl .role{color:#fff;font-size:.82rem}
+.sw{display:block;width:100%;height:56px;background:var(--f);border:1px solid #B0B0B0;cursor:pointer;font:700 .72rem "Space Mono",monospace;text-align:left;padding:0 .5rem;margin-bottom:.4rem}
+.gl[id="f-void"] .sw{border-color:#B0B0B0}
+.site{font-size:.78rem}
+table{width:100%;border-collapse:collapse;background:var(--e3-card);margin:.6rem 0;font-size:.85rem}
+th,td{border:1px solid var(--e3-line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{color:#fff;font:700 .72rem "Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+.mono{font-size:.8rem}.g{color:#fff}.g::before{content:"";display:inline-block;width:.7rem;height:.7rem;background:var(--f);border:1px solid #B0B0B0;margin-right:.4rem}
+/* promo canvas preview, per guide Section 3 */
+.canvas{position:relative;overflow:hidden;background:var(--e3-page);border:1px solid var(--e3-line);padding:2.4rem 1.2rem;text-align:center;margin:1rem 0}
+.canvas::before{content:"HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW  HUD-WoW";position:absolute;inset:0;font:700 1.6rem/2.4 "Space Mono",monospace;color:#000;opacity:.08;letter-spacing:.2em;pointer-events:none;overflow:hidden}
+.canvas>*{position:relative}
+.canvas .why{display:inline-block;color:var(--e3-why);font:700 clamp(2rem,6vw,3rem) "Space Mono",monospace;letter-spacing:.15em;text-transform:uppercase;border:1px solid var(--e3-line);padding:.4rem .8rem}
+.canvas .sub{color:var(--e3-who);font:400 1.5rem "Space Mono",monospace;letter-spacing:.15em;text-transform:uppercase;margin:.8rem 0}
+.canvas .flank{display:flex;justify-content:space-between;gap:1rem;margin:1.2rem 0;flex-wrap:wrap}
+.canvas .gly{border:1px solid var(--f);padding:.4rem .8rem;font:700 .85rem "Space Mono",monospace;color:#fff;transition:box-shadow .2s}
+.canvas .gly:hover{box-shadow:0 0 14px var(--f)}
+.canvas .gly::before{content:"";display:inline-block;width:.6rem;height:.6rem;background:var(--f);margin-right:.5rem}
+.canvas .cta{display:inline-block;background:var(--e3-how);color:#000;border-radius:0;padding:.8rem 1.4rem;font:700 .9rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+@media (prefers-reduced-motion:no-preference){
+.fade{opacity:0;animation:fin .5s ease forwards;animation-delay:calc(var(--i)*150ms)}
+@keyframes fin{to{opacity:1}}
+.canvas .cta{animation:cbGlow 2s ease-in-out infinite}}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.4rem}.strip .cb-pill{justify-content:center;text-align:center;line-height:1.4;padding:.8rem .4rem}
+ul{max-width:70ch}li{margin:.35rem 0}
+.toast{position:fixed;bottom:1rem;right:1rem;background:#fff;color:#000;padding:.4rem .8rem;font:700 .75rem "Space Mono",monospace;opacity:0;transition:opacity .2s;z-index:5}.toast.on{opacity:1}
+:focus-visible{outline:2px solid var(--e3-how);outline-offset:2px}
+</style></head><body>
+<main>
+<a class="back" href="index.html#bw-hud">Back to HUD-WoW</a>
+<h1>HUD-WoW Color Bible</h1>
+<p class="lead">Earth3 Visual Layout Guide v0.1, Xbot Promo Section. Eight fields, eight colors, eight glyphs. Promotion of Earth3 uses these colors and only these colors.</p>
+<div class="rule"><b>Fixed assignment rule.</b> Field-to-color assignments are immutable. Reassigning a color to another field is a system integrity violation. Click any swatch to copy its hex.</div>
+
+<h2>The 8-glyph color system</h2>
+<div class="grid"><article class="gl fade" id="f-who" style="--f:#BF00FF;--i:0">
+<button class="sw" data-hex="#BF00FF" aria-label="Copy #BF00FF"><span style="color:#000000">#BF00FF</span></button>
+<h3>PlayerPowerID</h3><p class="meta">WHO · Neon Violet · #BF00FF</p><p class="role">Identity anchor</p><p>Defines who holds power within a given node. Every interaction in Earth3 traces back to a PlayerPowerID, the sovereign entity initiating or receiving value.</p>
+<a class="site" href="index.html#bw-playerpower-id">See it on the promo page</a></article><article class="gl fade" id="f-what" style="--f:#0057B8;--i:1">
+<button class="sw" data-hex="#0057B8" aria-label="Copy #0057B8"><span style="color:#FFFFFF">#0057B8</span></button>
+<h3>aDaB</h3><p class="meta">WHAT · ADA Blue · #0057B8</p><p class="role">Action / data block</p><p>Encodes what is being exchanged: asset type, data payload, or contract action. aDaB is the content layer of every node transaction.</p>
+<a class="site" href="index.html#bw-adab">See it on the promo page</a></article><article class="gl fade" id="f-when" style="--f:#B0B0B0;--i:2">
+<button class="sw" data-hex="#B0B0B0" aria-label="Copy #B0B0B0"><span style="color:#000000">#B0B0B0</span></button>
+<h3>moMintNTime</h3><p class="meta">WHEN · Ghost Grey · #B0B0B0</p><p class="role">Temporal marker</p><p>Records the moment of mint, event trigger, or timestamp. Ghost Grey signals neutral, non-urgent structural data: the clock of the system.</p>
+<a class="site" href="index.html#bw-momintntime">See it on the promo page</a></article><article class="gl fade" id="f-then" style="--f:#3A3A3A;--i:3">
+<button class="sw" data-hex="#3A3A3A" aria-label="Copy #3A3A3A"><span style="color:#FFFFFF">#3A3A3A</span></button>
+<h3>TimeChain/Rails</h3><p class="meta">THEN · Deep Grey · #3A3A3A</p><p class="role">Sequence logic</p><p>Defines the ordered chain of consequence: what happens after a condition is met. Deep Grey denotes scaffolding and infrastructure-level logic.</p>
+<a class="site" href="index.html#bw-titanium-rails">See it on the promo page</a></article><article class="gl fade" id="f-where" style="--f:#00A550;--i:4">
+<button class="sw" data-hex="#00A550" aria-label="Copy #00A550"><span style="color:#000000">#00A550</span></button>
+<h3>GXYZ</h3><p class="meta">WHERE · Money Green · #00A550</p><p class="role">Spatial coordinate</p><p>Anchors a geographic or grid-based address within the Earth3 map layer. Money Green signals value-bearing location data.</p>
+<a class="site" href="index.html#bw-gxyz">See it on the promo page</a></article><article class="gl fade" id="f-why" style="--f:#FF6200;--i:5">
+<button class="sw" data-hex="#FF6200" aria-label="Copy #FF6200"><span style="color:#000000">#FF6200</span></button>
+<h3>CowsCome4Dayz</h3><p class="meta">WHY · Sunset Orange · #FF6200</p><p class="role">Motivation layer</p><p>Encodes the incentive, reward rationale, and player reason-to-engage. Sunset Orange is the energy that drives participation.</p>
+<a class="site" href="index.html#bw-cows">See it on the promo page</a></article><article class="gl fade" id="f-how" style="--f:#39FF14;--i:6">
+<button class="sw" data-hex="#39FF14" aria-label="Copy #39FF14"><span style="color:#000000">#39FF14</span></button>
+<h3>PayTooPlay</h3><p class="meta">HOW · Electric Green · #39FF14</p><p class="role">Mechanism / payment rail</p><p>Defines the payment rail, execution method, and transactional pathway. Electric Green is high-visibility by design: it marks the action trigger.</p>
+<a class="site" href="index.html#bw-paytooplay">See it on the promo page</a></article><article class="gl fade" id="f-void" style="--f:#000000;--i:7">
+<button class="sw" data-hex="#000000" aria-label="Copy #000000"><span style="color:#B0B0B0">#000000</span></button>
+<h3>HUD-WoW</h3><p class="meta">VOID · Black · #000000</p><p class="role">Null / overlay state</p><p>Displayed when a field is empty, inactive, or rendering a HUD overlay. VOID is structural silence: the absence of assignment.</p>
+<a class="site" href="index.html#bw-hud">See it on the promo page</a></article></div>
+
+<h2>Color-pattern chart</h2>
+<div style="overflow-x:auto"><table><thead><tr><th>Field</th><th>Color</th><th>Hex</th><th>Glyph ID</th><th>Role</th><th>On #111111</th></tr></thead><tbody><tr><td><span class="cb-pill who">WHO</span></td><td>Neon Violet</td><td class="mono">#BF00FF</td><td class="mono g" style="--f:#BF00FF">PlayerPowerID</td><td>Identity anchor</td><td class="mono">4.2:1</td></tr><tr><td><span class="cb-pill what">WHAT</span></td><td>ADA Blue</td><td class="mono">#0057B8</td><td class="mono g" style="--f:#0057B8">aDaB</td><td>Action / data block</td><td class="mono">2.7:1</td></tr><tr><td><span class="cb-pill when">WHEN</span></td><td>Ghost Grey</td><td class="mono">#B0B0B0</td><td class="mono g" style="--f:#B0B0B0">moMintNTime</td><td>Temporal marker</td><td class="mono">8.7:1</td></tr><tr><td><span class="cb-pill then">THEN</span></td><td>Deep Grey</td><td class="mono">#3A3A3A</td><td class="mono g" style="--f:#3A3A3A">TimeChain/Rails</td><td>Sequence logic</td><td class="mono">1.7:1</td></tr><tr><td><span class="cb-pill where">WHERE</span></td><td>Money Green</td><td class="mono">#00A550</td><td class="mono g" style="--f:#00A550">GXYZ</td><td>Spatial coordinate</td><td class="mono">5.8:1</td></tr><tr><td><span class="cb-pill why">WHY</span></td><td>Sunset Orange</td><td class="mono">#FF6200</td><td class="mono g" style="--f:#FF6200">CowsCome4Dayz</td><td>Motivation layer</td><td class="mono">6.3:1</td></tr><tr><td><span class="cb-pill how">HOW</span></td><td>Electric Green</td><td class="mono">#39FF14</td><td class="mono g" style="--f:#39FF14">PayTooPlay</td><td>Mechanism / payment rail</td><td class="mono">13.9:1</td></tr><tr><td><span class="cb-pill void">VOID</span></td><td>Black</td><td class="mono">#000000</td><td class="mono g" style="--f:#000000">HUD-WoW</td><td>Null / overlay state</td><td class="mono">1.1:1</td></tr></tbody></table></div>
+<p class="meta" style="font-size:.8rem">The last column is the computed contrast of each field color against the card background (#111111). WCAG AA needs 4.5:1 for normal text and 3:1 for large text. Where a color falls short, use it as a fill, border, or swatch and set the label in Ghost Grey or white.</p>
+
+<h2>Why Be an Xbot? promo rules</h2>
+<table><tbody>
+<tr><th>Page background</th><td class="mono">#0A0A0A</td></tr><tr><th>Card / panel</th><td class="mono">#111111</td></tr><tr><th>Border / divider</th><td class="mono">#1F1F1F</td></tr>
+<tr><th>Display font</th><td>Space Mono, ALL CAPS, letter-spacing 0.15em</td></tr><tr><th>Body font</th><td>Inter or system sans, regular, 16px</td></tr><tr><th>Glyph ID labels</th><td>Monospace, colored per field</td></tr>
+<tr><th>Primary headline</th><td>WHY, Sunset Orange #FF6200, 48px+, bold</td></tr><tr><th>Subheadings</th><td>WHO, Neon Violet #BF00FF, 24px</td></tr><tr><th>Body copy</th><td>Ghost Grey #B0B0B0</td></tr>
+<tr><th>CTA button</th><td>HOW, Electric Green #39FF14, black text, 0px radius, uppercase</td></tr>
+<tr><th>Glyph placement</th><td>CowsCome4Dayz lead center-top · PlayerPowerID flanking left · PayTooPlay flanking right · HUD-WoW background watermark, 8% opacity, tiled</td></tr>
+</tbody></table>
+<div class="canvas">
+<div class="why">Why be an Xbot?</div>
+<div class="sub">Your actions. Your value.</div>
+<div class="flank"><span class="gly" style="--f:#BF00FF">PlayerPowerID</span><span class="gly" style="--f:#FF6200">CowsCome4Dayz</span><span class="gly" style="--f:#39FF14">PayTooPlay</span></div>
+<a class="cta" href="index.html">Start with the brief</a>
+</div>
+
+<h2>Animation rules (web only)</h2>
+<ul><li><b>Entry:</b> glyphs fade in from 0 to 100% opacity, staggered 150ms per glyph.</li><li><b>Hover:</b> glyph border pulses in its field color (box-shadow glow).</li><li><b>CTA idle:</b> Electric Green outer glow, 2s loop.</li><li><b>VOID / HUD-WoW:</b> never animates, including on hover.</li><li>Animation is skipped for visitors who set reduced motion. Print and static exports are unaffected.</li></ul>
+
+<h2>Quick reference</h2>
+<div class="strip"><button class="cb-pill who" data-hex="#BF00FF">WHO<br>#BF00FF</button><button class="cb-pill what" data-hex="#0057B8">WHAT<br>#0057B8</button><button class="cb-pill when" data-hex="#B0B0B0">WHEN<br>#B0B0B0</button><button class="cb-pill then" data-hex="#3A3A3A">THEN<br>#3A3A3A</button><button class="cb-pill where" data-hex="#00A550">WHERE<br>#00A550</button><button class="cb-pill why" data-hex="#FF6200">WHY<br>#FF6200</button><button class="cb-pill how" data-hex="#39FF14">HOW<br>#39FF14</button><button class="cb-pill void" data-hex="#000000">VOID<br>#000000</button></div>
+<h3 style="margin-top:1.4rem">Usage notes</h3>
+<ul>
+<li>Never swap color assignments between fields.</li>
+<li>VOID black is for null, empty, or overlay states only, never decoration.</li>
+<li>Electric Green is an accent or CTA color. Overuse weakens the signal.</li>
+<li>Ghost Grey and Deep Grey are structural: scaffolding, timestamps, metadata.</li>
+<li>Validate every text-on-color pairing against WCAG 2.1 AA before public release. ADA Blue and Deep Grey need particular care on dark backgrounds.</li></ul>
+<p><a href="Earth3-Visual-Layout-Guide-v0.1.docx">Download the Word guide (v0.1)</a></p>
+</main><div class="toast" id="t" role="status">Copied</div>
+<script>
+document.querySelectorAll('[data-hex]').forEach(function(b){b.addEventListener('click',function(){
+ var h=b.dataset.hex,t=document.getElementById('t');
+ (navigator.clipboard?navigator.clipboard.writeText(h):Promise.reject()).catch(function(){}).then(function(){t.textContent='Copied '+h;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},1200)});});});
+</script></body></html>

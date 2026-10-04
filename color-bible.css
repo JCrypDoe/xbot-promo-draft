@@ -1,0 +1,46 @@
+:root{
+  --e3-who: #BF00FF;
+  --e3-what: #0057B8;
+  --e3-when: #B0B0B0;
+  --e3-then: #3A3A3A;
+  --e3-where: #00A550;
+  --e3-why: #FF6200;
+  --e3-how: #39FF14;
+  --e3-void: #000000;
+  --e3-page: #0A0A0A;
+  --e3-card: #111111;
+  --e3-line: #1F1F1F;
+  --e3-ghost-text: #B0B0B0;
+  --e3-void-watermark-opacity: 0.08;
+}
+/* Field swatch pills. Text colour is chosen per swatch for best contrast. */
+.cb-strip{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0}
+.cb-pill{display:inline-flex;align-items:center;gap:.4rem;padding:.28rem .6rem;border:1px solid var(--e3-line);
+  font:700 .72rem/1 "Space Mono",ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;text-decoration:none;cursor:pointer}
+.cb-pill.who{background:#BF00FF;color:#000000;}
+.cb-pill.what{background:#0057B8;color:#FFFFFF;}
+.cb-pill.when{background:#B0B0B0;color:#000000;}
+.cb-pill.then{background:#3A3A3A;color:#FFFFFF;}
+.cb-pill.where{background:#00A550;color:#000000;}
+.cb-pill.why{background:#FF6200;color:#000000;}
+.cb-pill.how{background:#39FF14;color:#000000;}
+.cb-pill.void{background:#000000;color:#B0B0B0; border-color:#B0B0B0;}
+/* Earth3 Tools chips: field colour as a left rail (fills, never text, where contrast is low). */
+.buzzword-chip[data-field]{border-left:4px solid var(--f);border-radius:.2rem .7rem .7rem .2rem}
+.buzzword-chip[data-field="who"]{--f:#BF00FF}
+.buzzword-chip[data-field="what"]{--f:#0057B8}
+.buzzword-chip[data-field="when"]{--f:#B0B0B0}
+.buzzword-chip[data-field="then"]{--f:#3A3A3A}
+.buzzword-chip[data-field="where"]{--f:#00A550}
+.buzzword-chip[data-field="why"]{--f:#FF6200}
+.buzzword-chip[data-field="how"]{--f:#39FF14}
+.buzzword-chip[data-field="void"]{--f:#000000}
+.buzzword-chip[data-field="void"]{background:#000;border-color:#1F1F1F;border-left-color:#B0B0B0}
+.buzzword-chip[data-field="void"]:hover{background:#000}
+.cb-callout{border:1px solid var(--e3-line);border-left:4px solid var(--e3-void);border-left-color:#B0B0B0;background:#000;padding:.7rem .85rem;margin:.7rem 0}
+.cb-callout p{margin:.25rem 0}
+.cb-cta{display:inline-block;margin-top:.5rem;padding:.55rem .9rem;background:var(--e3-how);color:#000;border-radius:0;
+  font:700 .76rem/1 "Space Mono",ui-monospace,Menlo,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.cb-cta:hover{box-shadow:0 0 14px var(--e3-how)}
+@media (prefers-reduced-motion:no-preference){.cb-cta.idle{animation:cbGlow 2s ease-in-out infinite}}
+@keyframes cbGlow{0%,100%{box-shadow:0 0 4px var(--e3-how)}50%{box-shadow:0 0 18px var(--e3-how)}}
