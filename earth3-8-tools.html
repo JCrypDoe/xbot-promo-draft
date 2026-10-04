@@ -27,6 +27,22 @@ h2{display:inline;margin:0 0 0 .7rem;color:var(--t);font:700 1.7rem Inter,sans-s
 .ana{margin:.2rem 0 .9rem;font-style:italic;font-size:.98rem;border-top:1px solid #1F1F1F;padding-top:.7rem}
 .more{display:inline-block;background:#39FF14;color:#000;font:700 .78rem "Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase;padding:.55rem .9rem}
 .card:hover .more{box-shadow:0 0 12px #39FF14}
+.why{border:1px solid #1F1F1F;background:#111111;padding:1.4rem 1.3rem;margin:0 0 2rem}
+.why h2{margin:0 0 .9rem;color:#BF00FF;font:400 clamp(1.3rem,4vw,1.8rem) "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+h2.tools{display:block;margin:0 0 1rem;color:#BF00FF;font:400 clamp(1.3rem,4vw,1.8rem) "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.trio div{border-left:4px solid #B0B0B0;padding-left:.9rem}
+.why h3{margin:0 0 .3rem;color:#fff;font:700 1.1rem Inter,sans-serif}
+.why h3.ex{margin:1.6rem 0 .6rem;color:#FF6200;font-size:1.25rem}
+.why p{margin:0;color:#B0B0B0;font-size:1rem}
+.steps{margin:0;padding-left:1.3rem;color:#B0B0B0}.steps li{margin:.55rem 0}.steps b{color:#fff}
+.agents p{margin:.7rem 0}.agents .big{color:#fff;font-size:1.15rem}.agents b{color:#fff}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:1.2rem 0}
+.fb{border:1px solid #B0B0B0;background:#0A0A0A;color:#fff;padding:.6rem .9rem;font-weight:600;text-align:center}
+.fb small{display:block;font:400 .72rem "Space Mono",monospace;letter-spacing:.1em;color:#B0B0B0;text-transform:uppercase}
+.fb.you{border:2px solid #BF00FF}.fb.rules{border:2px solid #B0B0B0}
+.ar{color:#B0B0B0;font-size:1.4rem}
+@media (max-width:640px){.flow{flex-direction:column;align-items:stretch}.ar{text-align:center;transform:rotate(90deg)}}
 footer{margin-top:2rem;text-align:center;font-size:.95rem}
 footer a{color:#B0B0B0;margin:0 .6rem;display:inline-block;padding:.3rem 0}
 .go{display:inline-block;margin:.8rem 0 1rem;background:#39FF14;color:#000;border-radius:0;padding:.85rem 1.4rem;font:700 .95rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
@@ -45,6 +61,32 @@ html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-b
 <p class="tip">Tap any card for the full story. Use your browser's Back button to come back here.</p>
 <nav class="dots" aria-label="Jump to a tool"><a class="dot" href="#who" style="--f:#BF00FF" aria-label="Jump to WHO: You"></a><a class="dot" href="#what" style="--f:#0057B8" aria-label="Jump to WHAT: The Coin"></a><a class="dot" href="#when" style="--f:#B0B0B0" aria-label="Jump to WHEN: The Moment"></a><a class="dot" href="#then" style="--f:#3A3A3A" aria-label="Jump to THEN: The Timeline"></a><a class="dot" href="#where" style="--f:#00A550" aria-label="Jump to WHERE: The Route"></a><a class="dot" href="#why" style="--f:#FF6200" aria-label="Jump to WHY: The Reason"></a><a class="dot" href="#how" style="--f:#39FF14" aria-label="Jump to HOW: The Payoff"></a><a class="dot" href="#void" style="--f:#000000" aria-label="Jump to VOID: The Window"></a></nav>
 </header>
+<section class="why" id="why">
+<h2>More than a game token</h2>
+<div class="trio">
+<div><h3>Your privacy</h3><p>Your history belongs to you. You decide who learns what, and a company can confirm a fact about you without ever seeing who you are.</p></div>
+<div><h3>Ads on your terms</h3><p>Sponsors pay you for your attention instead of interrupting it. You opt in, and you get paid.</p></div>
+<div><h3>A real voice</h3><p>Every player gets one vote to use, or hand to someone they trust. It runs on Cardano, a community-run network, and Earth3 is working toward linking up with Cardano delegates and their treasury.</p></div>
+</div>
+<h3 class="ex">See it in action: the fish sandwich</h3>
+<ol class="steps">
+<li><b>Order.</b> Player Doe orders a fish sandwich in a fast-food promotion. That is a moment in the digital world (Earth2), and it gets stamped as a <b>moMintNTime</b>.</li>
+<li><b>Pick up.</b> Doe picks the sandwich up at the counter. That is a moment in the real world (Earth1), and it gets a second stamp.</li>
+<li><b>Power.</b> Every stamp adds to Doe's <b>PlayerPower</b>.</li>
+<li><b>Privacy.</b> Today, details like this mostly end up with a few giant companies. With Earth3, Doe holds the record. A sponsor can ask "was this a real customer?" and get a yes, without learning who Doe is. It works like showing a "21 and over" stamp instead of your whole ID.</li>
+</ol>
+</section>
+<section class="why agents" id="agents">
+<h2>A world of agents</h2>
+<p class="big">Soon you won't hunt through apps and menus. You'll tell a digital helper, called an <b>agent</b>, what you want, and it will do the work.</p>
+<p>As computers and phones put these helpers up front, they will have core access to nearly everything a player needs: accounts, money, files, and games. That is powerful, and it raises a fair question: what is your agent allowed to do, and who decides?</p>
+<p>Earth3 organizes it. It puts the <b>Rules of the Game</b> out in the open, so you, your agent, and everyone else can see them and follow them.</p>
+<div class="flow" role="img" aria-label="You, then your agent, then the Rules of the Game, then everything you need">
+<span class="fb you">You</span><span class="ar">&rarr;</span><span class="fb">Your agent</span><span class="ar">&rarr;</span><span class="fb rules">Rules of the Game<small>Earth3</small></span><span class="ar">&rarr;</span><span class="fb">Everything you need</span>
+</div>
+<p>Because the rules are set up front, your agent can act for you without stopping to ask about every step.</p>
+</section>
+<h2 class="tools">The 8 tools</h2>
 <div class="grid">
 <a class="card" id="who" href="index.html#bw-playerpower-id" style="--f:#BF00FF;--t:#BF00FF;--b:#000000">
 <span class="badge">WHO</span><h2>You</h2><p class="glyph">PlayerPowerID</p>
