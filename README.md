@@ -50,3 +50,51 @@ Doc-grounded concept mapping notes:
 - `hud-wow-color-bible.md` defines current color semantics for HUD-WoW mint signals.
 - `hud-wow-trigger-samples.md` maps smart-contract mint conditions to HUD opportunity trigger colors.
 
+
+## Quick edit loop (VS Code + Copilot)
+
+1. Open this folder in VS Code: `xbot-promo-draft`.
+2. Edit copy in `index.html` and style in `styles.css`.
+3. Refresh the browser tab to preview changes.
+4. Ask Copilot Chat for small, focused edits.
+
+Recommended starting files:
+- `index.html` (promo content, sections, anchors)
+- `styles.css` (colors, spacing, typography)
+- `builder.html` (separate local builder surface)
+
+## Copilot prompt pack (copy/paste)
+
+Use these directly in Copilot Chat:
+
+- "Refactor only the Earth3 Tools cards in `index.html` for readability. Do not change section order or IDs."
+- "Tune color contrast in `styles.css` for dark mode accessibility while preserving brand palette."
+- "Shorten all paragraph copy under `#bw-momintntime` by 20% without losing meaning."
+- "Find and fix broken in-page anchors in `index.html` and list what changed."
+- "Standardize heading capitalization in `index.html` and keep all custom terms unchanged."
+
+## GitHub update commands
+
+From this folder, run:
+
+```powershell
+git add .
+git commit -m "Update promo copy and styling"
+git push
+```
+
+If you want a safe checkpoint before experimenting:
+
+```powershell
+git checkout -b tweak/colors-pass
+git add .
+git commit -m "Color pass"
+git push -u origin tweak/colors-pass
+```
+
+## Guardrails for AI edits
+
+- Keep IDs stable (for links): `#pitch-15`, `#how-it-works`, `#buzzword-explorer`, `#bw-*`.
+- Keep canonical term as `PayTooPlay` for now.
+- Keep `index.html` as the narrative page and `builder.html` separate.
+- Prefer small commits so you can easily roll back.
