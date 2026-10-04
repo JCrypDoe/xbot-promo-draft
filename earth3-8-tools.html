@@ -6,7 +6,7 @@
 *{box-sizing:border-box}
 body{margin:0;background:#0A0A0A;color:#B0B0B0;font:400 18px/1.6 Inter,system-ui,sans-serif}
 main{max-width:1050px;margin:0 auto;padding:2rem 1.1rem 3rem}
-header{text-align:center;margin-bottom:1.4rem}.brand-logo{display:block;width:min(260px,62vw);height:auto;margin:0 auto .9rem;filter:drop-shadow(0 0 12px rgba(191,0,255,.35))}
+header{position:relative;text-align:center;margin-bottom:1.4rem;min-height:96px}.brand-logo{position:absolute;left:0;top:0;display:block;width:clamp(86px,11vw,132px);height:auto;filter:drop-shadow(0 0 12px rgba(191,0,255,.35))}
 h1{margin:.2rem 0;color:#FF6200;font:700 clamp(2rem,7vw,3.6rem)/1.1 "Space Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
 .sub{color:#BF00FF;font:400 clamp(1rem,3vw,1.4rem) "Space Mono",monospace;letter-spacing:.2em;text-transform:uppercase;margin:.3rem 0 1rem}.tagline{color:#B0B0B0;font:600 .95rem "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase;margin:-.35rem 0 1.05rem}
 .intro{max-width:34rem;margin:0 auto;font-size:1.15rem}
@@ -42,7 +42,7 @@ h2.tools{display:block;margin:0 0 1rem;color:#BF00FF;font:400 clamp(1.3rem,4vw,1
 .fb small{display:block;font:400 .72rem "Space Mono",monospace;letter-spacing:.1em;color:#B0B0B0;text-transform:uppercase}
 .fb.you{border:2px solid #BF00FF}.fb.rules{border:2px solid #B0B0B0}
 .ar{color:#B0B0B0;font-size:1.4rem}
-@media (max-width:640px){.flow{flex-direction:column;align-items:stretch}.ar{text-align:center;transform:rotate(90deg)}}
+@media (max-width:640px){.flow{flex-direction:column;align-items:stretch}.ar{text-align:center;transform:rotate(90deg)}header{min-height:0}.brand-logo{position:static;margin:0 auto .75rem;width:min(140px,42vw)}}
 footer{margin-top:2rem;text-align:center;font-size:.95rem}
 footer a{color:#B0B0B0;margin:0 .6rem;display:inline-block;padding:.3rem 0}
 .go{display:inline-block;margin:.8rem 0 1rem;background:#39FF14;color:#000;border-radius:0;padding:.85rem 1.4rem;font:700 .95rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
