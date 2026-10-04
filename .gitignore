@@ -7,3 +7,6 @@ node_modules/
 
 # Logs
 *.log
+
+# Keep Word docs private by default
+*.docx
