@@ -1,0 +1,57 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="420" viewBox="0 0 1800 420" role="img" aria-labelledby="title desc">
+  <title id="title">Earth3 Agent Flow</title>
+  <desc id="desc">You to Your Agent to Rules of the Game to Everything You Need, styled with Earth3 colors.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <filter id="glowP" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#BF00FF" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowG" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#39FF14" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowO" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#FF6200" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#B0B0B0"/>
+    </marker>
+    <style>
+      .label{font:700 42px 'Inter',system-ui,sans-serif; fill:#FFFFFF}
+      .sub{font:600 20px 'Space Mono',ui-monospace,monospace; fill:#B0B0B0; letter-spacing:1.1px; text-transform:uppercase}
+      .small{font:500 18px 'Inter',system-ui,sans-serif; fill:#B0B0B0}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="420" fill="url(#bg)"/>
+  <rect x="12" y="12" width="1776" height="396" rx="20" fill="none" stroke="#1F1F1F" stroke-width="2"/>
+
+  <rect x="70" y="105" width="300" height="190" rx="18" fill="#0A0A0A" stroke="#BF00FF" stroke-width="3" filter="url(#glowP)"/>
+  <text x="220" y="175" text-anchor="middle" class="label">You</text>
+  <text x="220" y="210" text-anchor="middle" class="sub">Player Intent</text>
+  <text x="220" y="245" text-anchor="middle" class="small">What you want</text>
+
+  <rect x="490" y="105" width="360" height="190" rx="18" fill="#0A0A0A" stroke="#39FF14" stroke-width="3" filter="url(#glowG)"/>
+  <text x="670" y="168" text-anchor="middle" class="label">Your Agent</text>
+  <text x="670" y="203" text-anchor="middle" class="sub">Execution Layer</text>
+  <text x="670" y="240" text-anchor="middle" class="small">Acts on your behalf</text>
+
+  <rect x="980" y="85" width="420" height="230" rx="18" fill="#0A0A0A" stroke="#FF6200" stroke-width="3" filter="url(#glowO)"/>
+  <text x="1190" y="160" text-anchor="middle" class="label">Rules of the Game</text>
+  <text x="1190" y="196" text-anchor="middle" class="sub">Earth3 Smart Rules</text>
+  <text x="1190" y="236" text-anchor="middle" class="small">Permissions, proofs, payouts, privacy</text>
+  <text x="1190" y="266" text-anchor="middle" class="small">all enforced in the open</text>
+
+  <rect x="1530" y="105" width="220" height="190" rx="18" fill="#0A0A0A" stroke="#B0B0B0" stroke-width="3"/>
+  <text x="1640" y="168" text-anchor="middle" class="label" style="font-size:34px">What</text>
+  <text x="1640" y="203" text-anchor="middle" class="label" style="font-size:34px">You Need</text>
+  <text x="1640" y="240" text-anchor="middle" class="sub" style="font-size:17px">Trusted Outcome</text>
+
+  <line x1="370" y1="200" x2="475" y2="200" stroke="#B0B0B0" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="850" y1="200" x2="965" y2="200" stroke="#B0B0B0" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1400" y1="200" x2="1515" y2="200" stroke="#B0B0B0" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <text x="900" y="372" text-anchor="middle" class="sub" style="font-size:18px; fill:#BF00FF;">You → Your Agent → Rules of the Game → What You Need</text>
+</svg>

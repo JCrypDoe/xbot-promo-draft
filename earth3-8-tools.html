@@ -37,12 +37,12 @@ h2.tools{display:block;margin:0 0 1rem;color:#BF00FF;font:400 clamp(1.3rem,4vw,1
 .why p{margin:0;color:#B0B0B0;font-size:1rem}
 .steps{margin:0;padding-left:1.3rem;color:#B0B0B0}.steps li{margin:.55rem 0}.steps b{color:#fff}
 .agents p{margin:.7rem 0}.agents .big{color:#fff;font-size:1.15rem}.agents b{color:#fff}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:1.2rem 0}
-.fb{border:1px solid #B0B0B0;background:#0A0A0A;color:#fff;padding:.6rem .9rem;font-weight:600;text-align:center}
-.fb small{display:block;font:400 .72rem "Space Mono",monospace;letter-spacing:.1em;color:#B0B0B0;text-transform:uppercase}
-.fb.you{border:2px solid #BF00FF}.fb.rules{border:2px solid #B0B0B0}
-.ar{color:#B0B0B0;font-size:1.4rem}
-@media (max-width:640px){.flow{flex-direction:column;align-items:stretch}.ar{text-align:center;transform:rotate(90deg)}header{min-height:0}.brand-logo{position:static;margin:0 auto .75rem;width:min(140px,42vw)}}
+.flow-graphic{margin:1.2rem 0}.flow-graphic img{display:block;width:100%;height:auto;border:1px solid #1F1F1F;background:#0A0A0A}
+
+
+
+
+@media (max-width:640px){header{min-height:0}.brand-logo{position:static;margin:0 auto .75rem;width:min(140px,42vw)}}
 footer{margin-top:2rem;text-align:center;font-size:.95rem}
 footer a{color:#B0B0B0;margin:0 .6rem;display:inline-block;padding:.3rem 0}
 .go{display:inline-block;margin:.8rem 0 1rem;background:#39FF14;color:#000;border-radius:0;padding:.85rem 1.4rem;font:700 .95rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
@@ -83,9 +83,9 @@ html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-b
 <p class="big">Soon you won't hunt through apps and menus. You'll tell a digital helper, called an <b>agent</b>, what you want, and it will do the work.</p>
 <p>As computers and phones put these helpers up front, they will have core access to nearly everything a player needs: accounts, money, files, and games. That is powerful, and it raises a fair question: what is your agent allowed to do, and who decides?</p>
 <p>Earth3 organizes it. It puts the <b>Rules of the Game</b> out in the open, so you, your agent, and everyone else can see them and follow them.</p>
-<div class="flow" role="img" aria-label="You, then your agent, then the Rules of the Game, then everything you need">
-<span class="fb you">You</span><span class="ar">&rarr;</span><span class="fb">Your agent</span><span class="ar">&rarr;</span><span class="fb rules">Rules of the Game<small>Earth3</small></span><span class="ar">&rarr;</span><span class="fb">Everything you need</span>
-</div>
+<figure class="flow-graphic">
+<img src="earth3-agents-flow.svg" alt="Earth3 flow: You to Your Agent to Rules of the Game to What You Need" loading="lazy">
+</figure>
 <p>Because the rules are set up front, your agent can act for you without stopping to ask about every step.</p>
 </section>
 <h2 class="tools">The 8 tools</h2>
