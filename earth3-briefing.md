@@ -15,7 +15,7 @@
 
 ## Who is Earth3?
 
-Earth3 is built for people who play, create, sponsor, and run infrastructure in a shared digital world.
+**Earth3 is its people.** It is for everyone who wants to get involved: those who play, create, sponsor, and run infrastructure in a shared digital world.
 
 - **Players ("Xbots" / Citizens):** each has a **PlayerPowerID**, a digital passport the player owns and that grows with them.
 - **Creators:** artists and builders whose work can carry rules and automatic payouts.
@@ -23,7 +23,7 @@ Earth3 is built for people who play, create, sponsor, and run infrastructure in 
 - **Node runners:** people who run the infrastructure and can earn credit for it.
 - **Agents:** AI helpers that act on a player's behalf under rules everyone can read.
 
-**Who is building it:** Not announced yet.
+**Who is building it:** Everyone who wants to get involved. Players, creators, sponsors, and node runners each add a piece, and Citizens help steer it through governance, with one vote each.
 
 ## What is Earth3?
 
@@ -50,21 +50,36 @@ Key ideas:
 
 ## When is it available?
 
-**Not announced yet.** Earth3 is in development and has not launched to the public. A **ceremonial first mint** is planned as the starting moment; its date has not been announced.
+**When it's ready.** No fixed date has been announced, and the timing depends partly on platform schedules outside the project's control. Earth3 is in development and has not launched to the public.
+
+**The goal:** to be ready when the next Xbox console launches, and to have **HUD-WoW** (the player dashboard) in front of players through the Xbox Insider program at launch or earlier. The wider vision is that players run their own personal node while they play, so their identity, records, and rewards stay with them. These are goals, not commitments.
+
+**What is and isn't confirmed:**
+- No partnership with Microsoft or Xbox has been announced. Earth3 is an independent project. Xbox and Microsoft are trademarks of Microsoft.
+- Microsoft has not announced an official launch date for its next console. AMD's CEO has said the chip is on track to support a 2027 launch, and the hardware details people discuss online are unconfirmed reports.
+- Acceptance into any Microsoft or Xbox program depends on Microsoft, so it should not be assumed.
+
+A **ceremonial first mint** is planned as the starting moment; its date has not been announced.
 
 ## Where can I get it?
 
-**Not announced yet.** For now, the project is explained at https://jcrypdoe.github.io/xbot-promo-draft/. Follow that page and this repository for announcements.
+**On the Earth3 website.** The website is being built now, and it is where players will register their PlayerID. Sign-up is not open yet. For now, the project site is https://jcrypdoe.github.io/xbot-promo-draft/.
 
 ## Why? (Why would I want it, and what does it cost?)
 
 **Why:** Earth3 is designed to give players three things: *privacy* (your history is yours and you choose who learns what), *ads on your terms* (sponsors pay you for attention you choose to give, instead of interrupting you), and *a real voice* (one vote each, on a community-run network).
 
-**What it costs:** **Not announced yet.** No price has been published. Do not estimate one. Any details about how players are paid, or how sponsors fund rewards, describe the design and are not an offer or a promise.
+**What it costs:**
+- **Players: free.** Creating a PlayerID costs nothing.
+- **Sponsors and node runners:** minting aDaB to build products and promotions involves a mint fee. The amount and how it is used have **not been finalized or announced**. Do not quote figures.
+
+Nothing in this repository is an investment offer, and no returns are promised.
 
 ## How do I get it?
 
-**Not announced yet.** The planned starting point is the **ceremonial first mint**; how people can take part has not been announced.
+- **Players:** register a free PlayerID on the Earth3 website once it opens.
+- **Sponsors and node runners:** mint aDaB once minting opens. Terms have not been announced.
+- **The first mint:** how people can take part has not been announced yet.
 
 ## The ceremonial first mint
 
