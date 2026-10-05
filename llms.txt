@@ -1,0 +1,18 @@
+# Earth3
+
+> Earth3 is a player-owned world of agents: identity, privacy, opt-in paid attention, and one vote per player, built around Cardano. It is in development and has not launched publicly. Start with the briefing; it answers Who, What, When, Where, Why, and How, and says which answers are not announced yet.
+
+## Start here
+- [Earth3 Briefing (read this first)](https://raw.githubusercontent.com/jcrypdoe/xbot-promo-draft/main/earth3-briefing.md): the six core questions answered, with rules for answering honestly
+
+## Pages
+- [Main promo page](https://jcrypdoe.github.io/xbot-promo-draft/): all eight Earth3 tools in depth
+- [Simple version](https://jcrypdoe.github.io/xbot-promo-draft/earth3-8-tools.html): plain-language explanation with links to each tool
+- [Color Bible](https://jcrypdoe.github.io/xbot-promo-draft/hud-wow-color-bible.html): the eight fixed Earth3 promotion colors
+
+## Notes
+- [Promo concept notes](https://raw.githubusercontent.com/jcrypdoe/xbot-promo-draft/main/promo-concept-notes.md)
+- [HUD-WoW trigger samples](https://raw.githubusercontent.com/jcrypdoe/xbot-promo-draft/main/hud-wow-trigger-samples.md)
+
+## Optional
+- [README (how the site is built)](https://raw.githubusercontent.com/jcrypdoe/xbot-promo-draft/main/README.md)

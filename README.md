@@ -1,4 +1,29 @@
-﻿# Earth3 Xbot Promo Draft (Who/What/When/Where/Why)
+# Earth3 — Ask an AI about it
+
+Earth3 is a player-owned world of agents. It is in development and has not launched publicly.
+
+## Ask your own AI
+
+Copy this into any AI assistant (ChatGPT, Claude, Copilot, Gemini) along with your question:
+
+```text
+Read https://raw.githubusercontent.com/jcrypdoe/xbot-promo-draft/main/earth3-briefing.md and the pages it links to.
+Then answer my questions about Earth3 using only what they say.
+If something has not been announced, tell me that instead of guessing.
+```
+
+Then ask anything: who it's for, what it is, when it's available, where to get it, what it costs, and how to take part. The briefing answers all six and is honest about what has not been announced yet.
+
+- Live site: https://jcrypdoe.github.io/xbot-promo-draft/
+- Simple version: https://jcrypdoe.github.io/xbot-promo-draft/earth3-8-tools.html
+- Briefing for AI assistants: [`earth3-briefing.md`](earth3-briefing.md)
+- Index for AI tools: [`llms.txt`](llms.txt)
+
+---
+
+## For contributors (how this site is built)
+
+# Earth3 Xbot Promo Draft (Who/What/When/Where/Why)
 
 This interactive draft now pulls from the official **Earth³ Mint Template Catalog v1.0** data model.
 
