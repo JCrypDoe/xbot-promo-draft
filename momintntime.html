@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The moMintNTime Concept | Earth3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="color-bible.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0A0A0A;color:#B0B0B0;font:400 18px/1.65 Inter,system-ui,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:1.5rem 1.1rem 3rem}
+.hero{position:relative;padding-left:7.8rem;border:1px solid #1F1F1F;background:radial-gradient(circle at 50% 10%,rgba(57,255,20,.18),transparent 44%),#111}
+.home-logo{position:absolute;left:1rem;top:1rem;display:block}
+.home-logo img{display:block;width:96px;height:auto;filter:drop-shadow(0 0 8px rgba(191,0,255,.25))}
+.home-logo:focus-visible{outline:3px solid #39FF14;outline-offset:4px}
+h1{margin:1rem 1rem .35rem 0;color:#B0B0B0;font:700 clamp(2rem,7vw,3.2rem)/1.08 "Space Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
+.sub{margin:0 1rem 1.2rem 0;color:#39FF14;font:700 .95rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
+.hero p{margin:.2rem 1rem 1.2rem 0;max-width:70ch;color:#fff}
+.hero-links{display:flex;gap:.75rem;flex-wrap:wrap;margin:0 1rem 1.25rem 0}
+.btn{display:inline-block;padding:.65rem .95rem;text-decoration:none;font:700 .78rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;border:1px solid #1F1F1F}
+.btn.home{background:#39FF14;color:#000}
+.btn.alt{background:#1A1A1A;color:#B0B0B0}
+.btn:hover{box-shadow:0 0 12px rgba(57,255,20,.35)}
+.grid{display:grid;grid-template-columns:1.2fr .95fr;gap:1rem;margin-top:1rem}
+.card{border:1px solid #1F1F1F;background:#111;padding:1rem}
+.card h2{margin:0 0 .6rem;color:#BF00FF;font:700 1.35rem/1.2 Inter,sans-serif}
+.card h3{margin:1rem 0 .45rem;color:#39FF14;font:700 1rem/1.2 Inter,sans-serif}
+.card p{margin:.35rem 0}
+.card ul{margin:.25rem 0 0;padding-left:1.1rem}
+.card li{margin:.38rem 0}
+.fig img{width:100%;height:auto;display:block;border:1px solid #1F1F1F;background:#0A0A0A}
+.caption{margin:.45rem 0 0;font-size:.9rem;color:#B0B0B0}
+.callout{margin-top:1rem;border-left:6px solid #B0B0B0;background:#0E0E0E;padding:.9rem 1rem}
+.callout b{color:#fff}
+.examples{margin-top:1rem}
+.examples .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.7rem}
+.tile{border:1px solid #1F1F1F;background:#0F0F0F;padding:.75rem;border-top:4px solid #B0B0B0}
+.tile b{color:#fff;display:block;margin-bottom:.3rem}
+footer{margin-top:1.4rem;padding-top:1rem;border-top:1px solid #1F1F1F;text-align:center}
+footer a{color:#39FF14;text-decoration:none}
+@media (max-width:840px){.hero{padding-left:1rem;padding-top:7rem}.home-logo{left:1rem;top:.7rem}.home-logo img{width:88px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" id="top">
+    <a class="home-logo" href="earth3-8-tools.html" aria-label="Back to Earth3 tools home">
+      <img src="earth3-logo.png" alt="Earth3 logo home button" onerror="this.style.display='none'">
+    </a>
+    <h1>The moMintNTime Concept</h1>
+    <p class="sub">Proof of reality through cryptography and time</p>
+    <p>When a real-world event can be verified by a digital event, something new becomes possible. Earth1 confirms what occurred, Earth2 records the digital action, and the result is a cryptographically verifiable <b>moMintNTime</b>.</p>
+    <div class="hero-links">
+      <a class="btn home" href="earth3-8-tools.html">Back to Earth3 Tools</a>
+      <a class="btn alt" href="index.html#bw-momintntime">Read the full brief section</a>
+    </div>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <h2>How It Works</h2>
+      <h3>1) Earth1 confirms</h3>
+      <p>A real-world action happens: pickup, check-in, attendance, purchase, service completion, or verified creation.</p>
+      <h3>2) Earth2 records</h3>
+      <p>The digital event is logged with policy-aware identity signals, permissions, and event metadata.</p>
+      <h3>3) TimeChain anchors</h3>
+      <p>References are anchored so the record can be proven later without rewriting history.</p>
+      <h3>4) Titanium Rails indexes</h3>
+      <p>The event is queryable and permission-aware across PlayerPowerID, PayTooPlay, sponsors, and governance flows.</p>
+
+      <div class="callout">
+        <b>Remix + Royalty Example</b>
+        <p>An artist mints a song, a creator remixes it into a game variant, and later resale payouts route instantly to the right parties via smart-contract rules.</p>
+      </div>
+
+      <div class="examples">
+        <h3>Example Paths</h3>
+        <div class="row">
+          <div class="tile"><b>IRL + Digital Pickup</b>Order in Earth3, pickup in Earth1, mint as proof.</div>
+          <div class="tile"><b>PayTooPlay Quest</b>Player opts in, completes task, receives reward.</div>
+          <div class="tile"><b>Creator Attribution</b>Asset lineage proves who created what and when.</div>
+          <div class="tile"><b>Governance Action</b>Vote/delegation becomes an auditable civic event.</div>
+        </div>
+      </div>
+    </article>
+
+    <aside class="card">
+      <h2>Color Bible Signals</h2>
+      <p>moMintNTime lives at the intersection of <b>WHEN</b> event proof and <b>THEN</b> timeline memory, routed through <b>WHERE</b> privacy logic.</p>
+      <div class="cb-strip" aria-label="Earth3 field colors">
+        <span class="cb-pill when">WHEN #B0B0B0</span>
+        <span class="cb-pill then">THEN #3A3A3A</span>
+        <span class="cb-pill where">WHERE #00A550</span>
+        <span class="cb-pill who">WHO #BF00FF</span>
+      </div>
+
+      <div class="fig" style="margin-top:1rem">
+        <img src="earth3-agents-flow.svg" alt="Earth3 signal flow diagram">
+        <p class="caption">Earth3 interaction flow from player action to verified outcome.</p>
+      </div>
+
+      <div class="fig" style="margin-top:1rem">
+        <img src="earth3-8-tools-poster.png" alt="Earth3 tools poster">
+        <p class="caption">The 8 tools view: moMintNTime is one part of the full stack.</p>
+      </div>
+    </aside>
+  </section>
+
+  <footer>
+    <p>Earth3 logo above is your home button for quick return.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+</main>
+</body>
+</html>
