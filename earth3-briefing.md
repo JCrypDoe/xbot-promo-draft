@@ -34,7 +34,7 @@ It is built around the Cardano blockchain and eight tools:
 | Tool | Plain meaning |
 |---|---|
 | **PlayerPowerID** (WHO) | Your one digital passport and reputation, owned by you |
-| **aDaB** (WHAT) | The game token. Capped at 45 billion, described as a 50/50 ADA and Bitcoin value narrative |
+| **aDaB** (WHAT) | The game token, and the Cardano token many mints use, typically when an item has value (for example a limited 1-of-100 flight-simulator wrap). Capped at 45 billion, described as a 50/50 ADA and Bitcoin value narrative |
 | **moMintNTime** (WHEN) | A verified moment, saved as a record. Every moMintNTime builds your PlayerPower |
 | **TimeChain / Titanium Rails** (THEN) | The timeline and index that keeps records in order, searchable, and permission-aware |
 | **GXYZ LoGiK** (WHERE) | Privacy and routing logic: who sees what, and where information goes |

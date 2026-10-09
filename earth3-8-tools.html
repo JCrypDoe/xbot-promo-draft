@@ -53,6 +53,21 @@ footer a{color:#B0B0B0;margin:0 .6rem;display:inline-block;padding:.3rem 0}
 @keyframes fin{to{opacity:1}}
 :focus-visible{outline:3px solid #39FF14;outline-offset:3px}
 html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.why .adab-row{margin:.2rem 0 1.1rem}
+.adab-link{display:inline-block;background:#0A0A0A;color:#fff;border:1px solid #B0B0B0;border-left:10px solid #0057B8;padding:.45rem .9rem;font:700 .95rem "Space Mono",monospace;letter-spacing:.12em;text-decoration:none}
+.adab-link::after{content:" \2192";color:#B0B0B0}
+.adab-link:hover,.adab-link:focus-visible{box-shadow:0 0 12px #0057B8;border-color:#fff}
+.concept{scroll-margin-top:1rem;margin:2rem 0 0;background:#111111;border:1px solid #1F1F1F;border-left:14px solid #B0B0B0;padding:1.3rem 1.3rem 1rem}
+.concept h2{margin:0 0 .8rem;color:#BF00FF;font:400 clamp(1.3rem,4vw,1.8rem) "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.concept h3{margin:1.4rem 0 .3rem;color:#fff;font:700 1.15rem Inter,sans-serif}
+.concept p{margin:.5rem 0;color:#B0B0B0;font-size:1.02rem}
+.paths{list-style:none;margin:.6rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.6rem}
+.paths li{border:1px solid #1F1F1F;background:#0A0A0A;padding:.6rem .8rem}
+.paths b{display:block;color:#fff}.paths span{color:#B0B0B0;font-size:.95rem}
+.concept .back{margin-top:1.2rem;font-size:.9rem}.concept .back a{color:#B0B0B0}
+.concept .fits{margin:.4rem 0 1rem;background:#0A0A0A;border:1px solid #1F1F1F;border-left:6px solid #0057B8;padding:.7rem 1rem}
+.concept .fits p{margin:0;color:#fff}
+.concept .fine{margin-top:1.2rem;font-size:.82rem;color:#B0B0B0}
 </style></head><body><main>
 <header>
 <img class="brand-logo" src="earth3-logo.png" alt="Earth3 logo" onerror="this.style.display='none'">
@@ -63,8 +78,9 @@ html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-b
 <p class="tip">Tap any card for the full story. Use your browser's Back button to come back here.</p>
 <nav class="dots" aria-label="Jump to a tool"><a class="dot" href="#who" style="--f:#BF00FF" aria-label="Jump to WHO: You"></a><a class="dot" href="#what" style="--f:#0057B8" aria-label="Jump to WHAT: The Coin"></a><a class="dot" href="#when" style="--f:#B0B0B0" aria-label="Jump to WHEN: The Moment"></a><a class="dot" href="#then" style="--f:#3A3A3A" aria-label="Jump to THEN: The Timeline"></a><a class="dot" href="#where" style="--f:#00A550" aria-label="Jump to WHERE: The Route"></a><a class="dot" href="#why" style="--f:#FF6200" aria-label="Jump to WHY: The Reason"></a><a class="dot" href="#how" style="--f:#39FF14" aria-label="Jump to HOW: The Payoff"></a><a class="dot" href="#void" style="--f:#000000" aria-label="Jump to VOID: The Window"></a></nav>
 </header>
-<section class="why" id="why">
+<section class="why" id="more-than-token">
 <h2>More than a game token</h2>
+<p class="adab-row"><a class="adab-link" href="#momintntime-concept">aDaB</a></p>
 <div class="trio">
 <div><h3>Your privacy</h3><p>Your history belongs to you. You decide who learns what, and a company can confirm a fact about you without ever seeing who you are.</p></div>
 <div><h3>Ads on your terms</h3><p>Sponsors pay you for your attention instead of interrupting it. You opt in, and you get paid.</p></div>
@@ -117,6 +133,32 @@ html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-b
 <p class="body">Your dashboard: it shows what's happening and what you can do. Goes quiet and dark when there's nothing.</p><p class="ana">Like an Email, but Valuble</p>
 <span class="more">Dive deeper into HUD-WoW</span></a>
 </div>
+<section class="concept" id="momintntime-concept">
+<h2>The moMintNTime Concept</h2>
+<div class="fits"><p><b>Where aDaB fits.</b> aDaB is the Cardano token that many mints use, typically when the item has value. For example, a limited mint of a 1-of-100 F18 wrap for MSFS2024: the mint is recorded as a moMintNTime, and aDaB is the token the mint uses.</p></div>
+<p>When a real-world event can be verified by a digital event, something new becomes possible. Earth1 confirms what occurred, Earth2 records the digital action, and the result becomes a cryptographically verifiable moMintNTime.</p>
+<p>These events are anchored through TimeChain references and Titanium Rails indexing so they remain queryable, permission-aware, and provable across the ecosystem.</p>
+<h3>Privacy Through Zero-Knowledge Proofs</h3>
+<p>Magnus ZK keeps activity protected behind mathematics. Players choose what to reveal, who can access it, and what value should be exchanged for that access.</p>
+<p>Instead of platforms owning and monetizing player data, the player owns their digital history.</p>
+<h3>Why It Matters for PlayerPower</h3>
+<p>Each moMintNTime can strengthen PlayerPowerID through verifiable reputation and participation proof. Over time, this creates a living record of real contribution across games, governance, and markets.</p>
+<h3>Example Scenario: Remix + Royalty</h3>
+<p>This is one moMintNTime path. An artist mints a song, a creator remixes it into a Microsoft game variant, and when Player Doe sells that version, payouts route instantly to the right parties based on smart-contract rules. The Rules of the Game stay crystal clear.</p>
+<h3>More moMintNTime Example Paths</h3>
+<ul class="paths">
+<li><b>IRL + Digital Pickup</b><span>Order in Earth3, pickup in Earth1, minted as proof.</span></li>
+<li><b>PayTooPlay Sponsor Quest</b><span>Player opts in, completes task, receives reward.</span></li>
+<li><b>Creator Attribution Trail</b><span>Asset lineage proves who created what and when.</span></li>
+<li><b>Privacy Proof Access</b><span>Eligibility verified via ZK without exposing raw identity.</span></li>
+<li><b>NodeRunner Service Proof</b><span>Infrastructure work minted as verified contribution.</span></li>
+<li><b>Citizen Governance Action</b><span>Vote/delegation events become auditable civic moMintNTime records.</span></li>
+</ul>
+<h3>Connection to PayTooPlay</h3>
+<p>PayTooPlay turns attention into a player-controlled asset: sponsors can request opt-in engagement, and completion proofs can be minted as moMintNTime records.</p>
+<p class="fine">Microsoft Flight Simulator and MSFS2024 are trademarks of Microsoft, mentioned here only as an example. No partnership with Microsoft has been announced.</p>
+<p class="back"><a href="#more-than-token">Back to "More than a game token"</a> &nbsp;·&nbsp; <a href="#top">Back to top</a></p>
+</section>
 <footer>
 <a class="go" href="index.html">Read the full brief</a><br>
 <h3 class="ex">See it in action: the fish sandwich</h3>
