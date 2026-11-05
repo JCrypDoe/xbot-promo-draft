@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TimeChain + Titanium Rails | Earth3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="color-bible.css" />
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:var(--e3-page);color:var(--e3-ghost-text);font:400 16px/1.62 Inter,system-ui,sans-serif}
+main{max-width:1060px;margin:0 auto;padding:1.8rem 1.1rem 3rem}
+header{position:relative;text-align:center;margin-bottom:1.2rem;min-height:96px}
+.brand-logo-link{position:absolute;left:0;top:0;display:block;line-height:0}
+.brand-logo{display:block;width:clamp(86px,11vw,132px);height:auto;filter:drop-shadow(0 0 8px rgba(176,176,176,.35))}
+h1{margin:.2rem 0;color:#fff;text-shadow:0 0 14px rgba(58,58,58,.82),0 0 28px rgba(58,58,58,.55);font:700 clamp(1.95rem,7vw,3rem)/1.08 "Space Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
+.sub{color:var(--e3-then);font:400 clamp(.95rem,2.6vw,1.22rem) "Space Mono",monospace;letter-spacing:.17em;text-transform:uppercase;margin:.3rem 0 .9rem}
+.tagline{max-width:50rem;margin:0 auto;color:#fff;font-size:1.04rem}
+.quick-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
+.quick-links a{color:var(--e3-ghost-text);text-decoration:none;border:1px solid var(--e3-line);padding:.33rem .74rem;font:700 .72rem "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.quick-links a:hover{border-color:#fff;color:#fff}
+.section{margin-top:1.6rem}
+h2{color:var(--e3-then);font:400 1.08rem "Space Mono",monospace;letter-spacing:.15em;text-transform:uppercase;margin:0 0 .75rem}
+.card{background:var(--e3-card);border:1px solid var(--e3-line);border-left:14px solid var(--e3-then);padding:1.08rem 1.2rem;margin-bottom:.9rem}
+.badge{display:inline-block;background:var(--e3-then);color:#fff;font:700 .76rem "Space Mono",monospace;letter-spacing:.14em;padding:.26rem .7rem;margin-bottom:.45rem}
+.card p{color:#fff;margin:.35rem 0}
+.bullets{margin:.35rem 0 .2rem 1.08rem;padding:0;color:#fff;line-height:1.55}
+.bullets li{margin-bottom:.42rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.65rem;margin-top:.52rem}
+.tile{border:1px solid var(--e3-line);background:#0d0d0d;padding:.66rem .73rem}
+.tile strong{display:block;color:#fff;font-size:.83rem;margin-bottom:.24rem}
+.tile span{color:var(--e3-ghost-text);font-size:.79rem;line-height:1.42}
+.callout{border:1px solid var(--e3-line);border-left:6px solid var(--e3-how);background:#000;padding:.78rem .9rem;margin-top:1rem}
+.callout p{margin:.26rem 0;color:var(--e3-ghost-text);font-size:.9rem}
+.cta{display:inline-block;background:var(--e3-how);color:#000;padding:.8rem 1.35rem;font:700 .84rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;margin-top:.45rem}
+@media (prefers-reduced-motion:no-preference){.cta{animation:glow 2s ease-in-out infinite}}
+@keyframes glow{0%,100%{box-shadow:0 0 4px var(--e3-how)}50%{box-shadow:0 0 18px var(--e3-how)}}
+footer{margin-top:2rem;text-align:center;font-size:.84rem}
+footer a{color:var(--e3-ghost-text);margin:0 .45rem;display:inline-block;padding:.3rem 0;text-decoration:none}
+footer a:hover{color:#fff}
+:focus-visible{outline:2px solid var(--e3-how);outline-offset:2px}
+@media (max-width:640px){header{min-height:0}.brand-logo-link{position:static;display:inline-block;margin:0 auto .7rem}.brand-logo{width:min(120px,36vw)}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a class="brand-logo-link" href="earth3-8-tools.html" aria-label="Back to Earth3 tools">
+  <img class="brand-logo" src="earth3-logo.png" alt="Earth3 logo" onerror="this.style.display='none'">
+</a>
+<h1>TimeChain + Titanium Rails</h1>
+<p class="sub">The THEN · Continuity, proof, and trusted memory layer</p>
+<p class="tagline">TimeChain records what happened. Titanium Rails keeps it queryable, permission-aware, and useful across the Earth3 ecosystem.</p>
+<nav class="quick-links">
+  <a href="earth3-8-tools.html">Back to 8 Tools</a>
+  <a href="index.html#bw-titanium-rails">Brief section</a>
+  <a href="#timechain-core">TimeChain core</a>
+  <a href="#rails-core">Titanium Rails</a>
+  <a href="#model-economy">Model economy</a>
+</nav>
+</header>
+
+<section class="section" id="timechain-core">
+<h2>What TimeChain Does</h2>
+<div class="card">
+<span class="badge">THEN</span>
+<p>TimeChain is the proof timeline. It anchors key moments so they can be verified later without guesswork.</p>
+<ul class="bullets">
+  <li><strong>Event continuity:</strong> mints, interactions, and transitions keep a traceable chronology.</li>
+  <li><strong>Cryptographic integrity:</strong> key records can be validated against hash references.</li>
+  <li><strong>Shared confidence:</strong> players, sponsors, and nodes can verify the same event history.</li>
+</ul>
+</div>
+</section>
+
+<section class="section" id="rails-core">
+<h2>Titanium Rails: The Index Spine</h2>
+<div class="card">
+<span class="badge">THEN</span>
+<p>Titanium Rails is the metadata and policy backbone that maps artifacts, payload pointers, identity links, and TimeChain references into one coherent structure.</p>
+<div class="grid">
+  <div class="tile"><strong>Global index</strong><span>Knows what exists, who controls it, and how each artifact is classified.</span></div>
+  <div class="tile"><strong>Routing layer</strong><span>Answers ecosystem queries with consistent, permission-correct access paths.</span></div>
+  <div class="tile"><strong>Policy engine</strong><span>Enforces consent and visibility rules across players, sponsors, and automation.</span></div>
+  <div class="tile"><strong>Proof links</strong><span>Connects each artifact and payload to its TimeChain references.</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="model-economy">
+<h2>Infinite Micro-Model Economy</h2>
+<div class="card">
+<span class="badge">THEN</span>
+<p>Rails also powers Earth3's micro-model economy by turning consented, high-signal activity into trainable data atoms.</p>
+<ul class="bullets">
+  <li><strong>Player-owned atoms:</strong> data remains permissioned under PlayerPower and DigitalID controls.</li>
+  <li><strong>Infinite packaging:</strong> the same source atoms can be sorted into many sponsor-ready datasets.</li>
+  <li><strong>CPX2-ready streams:</strong> clean training feeds are delivered without exposing raw private history.</li>
+</ul>
+
+<div class="callout">
+  <p><strong style="color:#fff">Simple message:</strong> TimeChain proves what happened. Titanium Rails makes that proof usable for value, trust, governance, and training at ecosystem scale.</p>
+</div>
+</div>
+</section>
+
+<div style="text-align:center;margin-top:1.2rem">
+  <a class="cta" href="index.html#bw-titanium-rails">Read the full TimeChain + Rails brief</a>
+</div>
+
+<footer>
+<a href="index.html">Why Be an Xbot?</a>
+<a href="earth3-8-tools.html">8 Tools, Simply Explained</a>
+<a href="adab-token.html">aDaB Details</a>
+<a href="who-details.html">WHO Details</a>
+<a href="momintntime.html">moMintNTime Concept</a>
+</footer>
+</main>
+</body>
+</html>

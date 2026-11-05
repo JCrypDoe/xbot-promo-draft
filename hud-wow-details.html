@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUD-WoW Details | Earth3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="color-bible.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0A0A0A;color:#B0B0B0;font:400 18px/1.65 Inter,system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:1.4rem 1.1rem 3rem}
+.hero{position:relative;padding:1.2rem 1.1rem 1.2rem 7.5rem;border:1px solid #1F1F1F;background:radial-gradient(circle at 50% 10%,rgba(57,255,20,.17),transparent 44%),#111}
+.home-logo{position:absolute;left:1rem;top:.8rem;display:block}
+.home-logo img{display:block;width:92px;height:auto;filter:drop-shadow(0 0 8px rgba(255,255,255,.2))}
+.home-logo:focus-visible{outline:3px solid #39FF14;outline-offset:4px}
+h1{margin:.8rem 0 .4rem;color:#fff;text-shadow:0 0 14px rgba(176,176,176,.72),0 0 28px rgba(176,176,176,.45);font:700 clamp(1.95rem,7vw,3rem)/1.08 "Space Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
+.sub{margin:0 0 .6rem;color:#39FF14;font:700 .95rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase}
+.hero p{margin:.2rem 0 0;max-width:70ch;color:#fff}
+.quick-links{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:.5rem;margin-top:1rem}
+.quick-links a{color:var(--e3-ghost-text);text-decoration:none;border:1px solid var(--e3-line);padding:.33rem .74rem;font:700 .72rem "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.quick-links a:hover{border-color:#fff;color:#fff}
+
+.grid{display:grid;grid-template-columns:1.25fr .95fr;gap:1rem;margin-top:1rem}
+.card{border:1px solid #1F1F1F;background:#111;padding:1rem}
+.card h2{margin:0 0 .7rem;color:#BF00FF;font:700 1.3rem/1.2 Inter,sans-serif}
+.card h3{margin:1rem 0 .45rem;color:#39FF14;font:700 1rem/1.2 Inter,sans-serif}
+.card p{margin:.35rem 0}
+.list{margin:.55rem 0 .3rem 1.05rem;padding:0}
+.list li{margin:.34rem 0}
+.callout{margin-top:1rem;border-left:6px solid #B0B0B0;background:#0F0F0F;padding:.8rem 1rem}
+.callout b{color:#fff}
+.tile{border:1px solid #1F1F1F;background:#0F0F0F;padding:.75rem;margin-bottom:.7rem;border-top:4px solid #B0B0B0}
+.tile b{display:block;color:#fff;margin-bottom:.28rem}
+footer{margin-top:1.4rem;padding-top:1rem;border-top:1px solid #1F1F1F;text-align:center}
+footer a{color:#39FF14;text-decoration:none}
+@media (max-width:860px){.hero{padding:7rem 1rem 1rem}.home-logo{left:1rem;top:.65rem}.home-logo img{width:84px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" id="top">
+    <a class="home-logo" href="earth3-8-tools.html" aria-label="Back to Earth3 tools home">
+      <img src="earth3-logo.png" alt="Earth3 logo home button" onerror="this.style.display='none'">
+    </a>
+    <h1>HUD-WoW Details</h1>
+    <p class="sub">Void Black interface · Customizable player alerts</p>
+    <p>HUD-WoW is the player-facing signal layer. In quiet mode it stays Void Black. When verified moments and outcomes matter, it lights up with the minimum signal you need to act fast.</p>
+    <nav class="quick-links">
+      <a href="earth3-8-tools.html">Back to 8 Tools</a>
+      <a href="index.html#bw-hud">Brief section</a>
+      <a href="#interaction">WHEN + THEN</a>
+      <a href="#signals">Signal language</a>
+    </nav>
+  </section>
+
+  <section class="grid" id="interaction">
+    <article class="card">
+      <h2>Where WHEN and THEN Interact</h2>
+      <p><b>WHEN</b> gives the verified moment. <b>THEN</b> gives the outcome rails. HUD-WoW is where those two become a glanceable decision for the player.</p>
+
+      <h3>Core interaction</h3>
+      <ul class="list">
+        <li><b>WHEN signal:</b> a moMintNTime is active, recent, or scheduled.</li>
+        <li><b>THEN signal:</b> outcome path is available (reward, route, claim, unlock, or next task).</li>
+        <li><b>VOID state:</b> interface goes quiet when nothing requires attention.</li>
+      </ul>
+
+      <h3>Customizable alerts for players</h3>
+      <ul class="list">
+        <li>Choose source scope: friends, follows, sponsors, NodeRunners, or all.</li>
+        <li>Choose alert types: mint events, payout chances, quest windows, privacy requests.</li>
+        <li>Choose urgency behavior: silent, soft pulse, high-priority stack.</li>
+        <li>Choose visibility: lock-screen style badge only, or full preview card.</li>
+      </ul>
+
+      <div class="callout">
+        <b>Simple takeaway:</b>
+        <p>Void Black keeps noise down. WHEN + THEN highlights only what matters, when it matters.</p>
+      </div>
+    </article>
+
+    <aside class="card" id="signals">
+      <h2>Signal Language</h2>
+      <div class="tile"><b>Void Black</b>Baseline system space. Calm by default.</div>
+      <div class="tile"><b>White Pulse / Ghost</b>Moment timing cue (now/upcoming/past reference).</div>
+      <div class="tile"><b>Titanium Silver</b>Outcome rail and anchored result path.</div>
+      <div class="tile"><b>GXYZ Green</b>Participation and engagement action available.</div>
+      <div class="tile"><b>Money Green</b>Direct compensation opportunity.</div>
+
+      <p>Players can tune these channels so HUD-WoW feels personal: less interruption, clearer trust signals, faster choices.</p>
+    </aside>
+  </section>
+
+  <footer>
+    <a href="#top">Back to top</a>
+  </footer>
+</main>
+</body>
+</html>
+

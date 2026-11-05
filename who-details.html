@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WHO Details - PlayerPower with Privacy | Earth3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="color-bible.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0A0A0A;color:#B0B0B0;font:400 18px/1.65 Inter,system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:1.4rem 1.1rem 3rem}
+.hero{position:relative;padding:1.2rem 1.1rem 1.2rem 7.5rem;border:1px solid #1F1F1F;background:radial-gradient(circle at 50% 12%,rgba(57,255,20,.17),transparent 44%),#111}
+.home-logo{position:absolute;left:1rem;top:.8rem;display:block}
+.home-logo img{display:block;width:92px;height:auto;filter:drop-shadow(0 0 8px rgba(191,0,255,.28))}
+.home-logo:focus-visible{outline:3px solid #39FF14;outline-offset:4px}
+h1{margin:.8rem 0 .4rem;color:#fff;text-shadow:0 0 14px rgba(191,0,255,.72),0 0 28px rgba(191,0,255,.45);font:700 clamp(1.95rem,7vw,3rem)/1.08 "Space Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
+.sub{margin:0 0 .6rem;color:#39FF14;font:700 .95rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase}
+.hero p{margin:.2rem 0 0;max-width:70ch;color:#fff}
+.quick-links{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:.5rem;margin-top:1rem}
+.quick-links a{color:var(--e3-ghost-text);text-decoration:none;border:1px solid var(--e3-line);padding:.33rem .74rem;font:700 .72rem "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.quick-links a:hover{border-color:#fff;color:#fff}
+.btn{display:inline-block;padding:.62rem .95rem;text-decoration:none;font:700 .78rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;border:1px solid #1F1F1F}
+.btn.home{background:#39FF14;color:#000}.btn.alt{background:#1A1A1A;color:#B0B0B0}
+.btn:hover{box-shadow:0 0 12px rgba(57,255,20,.35)}
+.grid{display:grid;grid-template-columns:1.25fr .95fr;gap:1rem;margin-top:1rem}
+.card{border:1px solid #1F1F1F;background:#111;padding:1rem}
+.card h2{margin:0 0 .7rem;color:#BF00FF;font:700 1.3rem/1.2 Inter,sans-serif}
+.card h3{margin:1rem 0 .45rem;color:#39FF14;font:700 1rem/1.2 Inter,sans-serif}
+.card p{margin:.35rem 0}
+.list{margin:.55rem 0 .3rem 1.05rem;padding:0}
+.list li{margin:.34rem 0}
+.callout{margin-top:1rem;border-left:6px solid #BF00FF;background:#0F0F0F;padding:.8rem 1rem}
+.callout b{color:#fff}
+.figure{margin:0}
+.figure img{display:block;width:100%;height:auto;border:1px solid #1F1F1F;background:#0A0A0A}
+.caption{margin:.45rem 0 0;font-size:.9rem;color:#B0B0B0}
+footer{margin-top:1.4rem;padding-top:1rem;border-top:1px solid #1F1F1F;text-align:center}
+footer a{color:#39FF14;text-decoration:none}
+@media (max-width:860px){.hero{padding:7rem 1rem 1rem}.home-logo{left:1rem;top:.65rem}.home-logo img{width:84px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" id="top">
+    <a class="home-logo" href="earth3-8-tools.html" aria-label="Back to Earth3 tools home">
+      <img src="earth3-logo.png" alt="Earth3 logo home button" onerror="this.style.display='none'">
+    </a>
+    <h1>WHO Details</h1>
+    <p class="sub">PlayerPower with privacy</p>
+    <p>PlayerPowerID is designed to prove what matters without exposing everything. You keep your identity context, and sponsors or systems verify only the minimum signal needed to unlock access, rewards, or trust.</p>
+    <nav class="quick-links">
+      <a href="earth3-8-tools.html">Back to 8 Tools</a>
+      <a href="index.html#bw-playerpower-id">Brief section</a>
+      <a href="#proof">Proof model</a>
+      <a href="#violetnight">VioletNight visual</a>
+    </nav>
+  </section>
+
+  <section class="grid" id="proof">
+    <article class="card">
+      <h2>Proof, Not Exposure</h2>
+      <p>Most systems ask for full profile exposure. Earth3 flips that. PlayerPowerID can prove one fact at a time while your full history stays private.</p>
+
+      <h3>What can be verified</h3>
+      <ul class="list">
+        <li>Human + active participant status</li>
+        <li>Eligibility for a quest, reward, or sponsor offer</li>
+        <li>Threshold checks (stake, score, reputation band)</li>
+        <li>Whether a claim is valid, without leaking raw records</li>
+      </ul>
+
+      <h3>Why it matters</h3>
+      <ul class="list">
+        <li>You keep control over your identity trail</li>
+        <li>Brands get trusted proof, not raw personal data</li>
+        <li>Governance stays auditable without becoming invasive</li>
+        <li>Player reputation compounds over time as reusable proof</li>
+      </ul>
+
+      <div class="callout">
+        <b>Simple takeaway:</b>
+        <p>Build proof, not a giant public profile.</p>
+      </div>
+    </article>
+
+    <aside class="card" id="violetnight">
+      <h2>VioletNight Reference</h2>
+      <figure class="figure">
+        <img src="assets/Who-VioletNight-Violet-v1.png" alt="VioletNight WHO concept visual" loading="lazy">
+      </figure>
+      <p class="caption">VioletNight WHO visual in Earth3 palette. Use this as the story-aligned view for public demos.</p>
+      <p><a class="btn alt" href="violetnight-who.html">View full VioletNight WHO page</a></p>
+    </aside>
+  </section>
+
+  <footer>
+    <a href="#top">Back to top</a>
+  </footer>
+</main>
+</body>
+</html>
